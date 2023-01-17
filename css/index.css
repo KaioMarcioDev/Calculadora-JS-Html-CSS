@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+#calc{
+    width: 400px;
+    padding: .5em;
+    background-color: #c4c4c4;
+    color:#000;
+    display: flex;
+    border-radius:10px;
+    flex-direction: column;
+}
+#calc h3 {
+    font-size: .8em;
+    font-weight: 300;
+    color:#331
+}
+#author{
+    text-align: left;
+    font-size: .9em;
+    font-weight: 700;
+    padding: 6px;
+}
+#operations{
+    border-radius: 10px;
+    background-color: antiquewhite;
+    text-align: right;
+    margin: 5px;
+    box-shadow: 2px 2px 4px black inset,
+                -6px -2px 4px black inset;
+}
+#previous-operation,
+#current-operation{
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+    padding: .2em;
+}
+
+#previous-operation{
+    color:rgb(20, 11, 11);
+    padding:4px;
+    margin-right: 5px;
+   
+}
+#current-operation{
+    font-size: 3em;
+    font-weight: 700;
+    padding:4px;
+    margin-right: 5px;
+}
+#buttons-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 3px;
+}
+#buttons-container button{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    height: 4em;
+    font-size: 1.2em;
+    font-weight: 700;
+    background-color: #dbdbdb;
+    box-shadow: 3px 3px 6px black inset;
+    cursor: pointer;
+}
+#buttons-container number{
+    background-color: #f3f3f3;
+}
+#buttons-container button:hover{
+    background-color: #bababa;
+    border-color: #999;
+    box-shadow: 3px 3px 6px black inset;
+}
+#buttons-container #equal-btn{
+    grid-column: span 2;
+    background-color: rgb(63, 88, 231);
+}
